@@ -36,8 +36,8 @@ public class CityList {
         else{
             Collections.sort(cityList, new Comparator<City>() {
                 @Override
-                public int compare(City city, City t1) {
-                    return city.getProvinceName().compareTo(t1.getProvinceName());
+                public int compare(City city, City c1) {
+                    return city.getProvinceName().compareTo(c1.getProvinceName());
                 }
             });
         }
@@ -47,7 +47,7 @@ public class CityList {
     /**
      *
      * @param city checking
-     *        checking if the city present otherwise throw exception
+     *        checking if the city present then delete it. otherwise throw an exception
      */
     public void delete(City city)
     {
@@ -63,7 +63,7 @@ public class CityList {
 
     /**
      *
-     * @return here is the size of array list
+     * @return here the function return the size of my list
      */
     public int count()
     {

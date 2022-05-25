@@ -30,7 +30,7 @@ public class CityListTest {
     public void testdelete()
     {
         CityList cityList=new CityList();
-        City city=new City("jessore","Khulna");
+        City city=new City("Pabna","Rajshahi");
         City city1=new City("Nilphamari","Rangpur");
         cityList.add(city);
         cityList.add(city1);
@@ -52,7 +52,7 @@ public class CityListTest {
     public void testDeleteException()
     {
         CityList cityList=new CityList();
-        City city=new City("jessore","Khulna");
+        City city=new City("Pabna","Rajshahi");
         City city1=new City("Nilphamari","Rangpur");
         cityList.add(city);
         cityList.add(city1);
@@ -69,7 +69,7 @@ public class CityListTest {
     @Test
     public void testGetCities() {
         CityList cityList = new CityList();
-        City city1=new City("ZZZZ","CD");
+        City city1=new City("XYZ","ABC");
         cityList.add(city1);
 
         assertEquals(0, city1.compareTo(cityList.getCities(1).get(0)));
